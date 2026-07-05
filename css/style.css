@@ -1,106 +1,124 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:tahoma;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
 }
 
-body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    background:#5e8390;
-    padding:20px;
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5e8390;
+    padding: 20px;
 }
 
-.card{
-    width:1000px;
-    max-width:95%;
-    background:#fff;
-    display:flex;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+/* کارت اصلی */
+.card {
+    width: 1000px;
+    max-width: 100%;
+    background: #fff;
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,.1);
 }
 
-.left,.right{
-    flex:1;
-    padding:45px;
+/* ستون‌ها */
+.left, .right {
+    flex: 1;
+    padding: 40px;
 }
 
-.left{
-    border-left:1px solid #eef2f7;
-    background:#ffffff;
-}
-
-.left h2{
-    color:#2563eb;
-    margin-bottom:15px;
-}
-
-.left p{
-    color:#666;
-    line-height:2;
-}
-
-.right h2{
-    margin-bottom:20px;
-    color:#222;
-}
-
-input{
-    width:100%;
-    padding:14px;
-    margin:12px 0;
-    border:1px solid #dbeeeb;
-    border-radius:10px;
-    background:#f8fafc;
-    transition:.3s;
-}
-
-input:focus{
-    outline:none;
-    border-color:#2563eb;
-    background:#fff;
-}
-
-button{
-    width:100%;
-    padding:14px;
-    border:none;
-    border-radius:10px;
-    background:#2563eb;
-    color:#fff;
-    font-size:16px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-button:hover{
-    background:#1d4ed8;
-    transform:translateY(-2px);
-}
-
-@media(max-width:768px){
-    .card{
-        flex-direction:column;
-    }
-
-    .left{
-        border-left:none;
-        border-bottom:1px solid #eef2f7;
-    }
-}
-.left-img {
-    width: 500px;
-    height:500px;
-    object-fit: contain;
-    margin-top: 15px;
-    display: block;
-}
+/* سمت چپ */
 .left {
+    background: #182a45;
+    color: #fff;
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.left h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.left p {
+    line-height: 2;
+    opacity: 0.9;
+    max-width: 300px;
+}
+
+/* عکس بزرگ */
+.left-img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin-top: 25px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,.2));
+}
+
+/* سمت راست */
+.right {
+    /*background: #fff;*/
+}
+
+.right h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* input */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #fff;
+}
+
+/* button */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        padding: 25px;
+    }
+
+    .left-img {
+        width: 160px;
+        height: 160px;
+    }
 }
