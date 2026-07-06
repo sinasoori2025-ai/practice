@@ -10,7 +10,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#1b2a2f;
+    background:#0a202d;
     padding:20px;
 }
 
@@ -30,8 +30,8 @@ body{
 
 .left{
     flex:1;
-    background:linear-gradient(135deg,#3b7d79,#2d5d5b);
-    color:#fff;
+    background:linear-gradient(135deg,#000000,#2d5d5b);
+    color:#ffffff;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -55,7 +55,7 @@ body{
     width:100%;
     max-width:320px;
     margin-top:35px;
-    border-radius:15px;
+    border-radius:5px;
     object-fit:cover;
 }
 
@@ -67,7 +67,7 @@ body{
     justify-content:center;
     align-items:center;
     padding:50px;
-    background:#ffffff;
+   /* background:#d3d3d3;*/
 }
 
 form{
@@ -78,7 +78,7 @@ form{
 .right h2{
     text-align:center;
     margin-bottom:30px;
-    color:#2d5d5b;
+    color:#ffffff;
     font-size:30px;
 }
 
@@ -89,8 +89,8 @@ input{
     padding:15px;
     margin-bottom:18px;
     border:none;
-    border-radius:10px;
-    background:#f3f7f7;
+    border-radius:5px;
+    background:#d6dada;
     font-size:15px;
     transition:.3s;
 }
@@ -98,7 +98,7 @@ input{
 input:focus{
     outline:none;
     background:#fff;
-    box-shadow:0 0 0 3px rgba(59,125,121,.2);
+    box-shadow:0 0 0 3px rgba(21, 225, 212, 0.2);
 }
 
 /* Button */
@@ -107,8 +107,8 @@ button{
     width:100%;
     padding:15px;
     border:none;
-    border-radius:10px;
-    background:#3b7d79;
+    border-radius:5px;
+    background:#000000;
     color:#fff;
     font-size:16px;
     cursor:pointer;
@@ -116,7 +116,7 @@ button{
 }
 
 button:hover{
-    background:#2d5d5b;
+    background:#909090;
     transform:translateY(-2px);
     box-shadow:0 10px 20px rgba(0,0,0,.15);
 }
@@ -143,7 +143,7 @@ button:hover{
     }
 
     .left-img{
-        max-width:220px;
+        max-width:500px;
         margin-top:20px;
     }
 
