@@ -1,13 +1,13 @@
-const form=document.getElementById("form");
-const nameInput=document.getElementById("name");
-const phoneInput=document.getElementById("phone");
+const form = document.getElementById("form");
+const nameInput = document.getElementById("name");
+const phoneInput = document.getElementById("phone");
 
-form.addEventListener("submit",function(e){
+form.addEventListener("submit", function(e){
     e.preventDefault();
 
-    if(nameInput.value.trim()===""||phoneInput.value.trim()===""){
-        alert("لطفاً اطلاعات را کامل وارد کنید.");
+    if(nameInput.value.trim() === "" || phoneInput.value.trim() === ""){
+        alert("Please complete all required information.");
     }else{
-        alert("ورود با موفقیت انجام شد.");
+        alert("Login successful.");
     }
 });
