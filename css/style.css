@@ -10,7 +10,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#0a202d;
+    background:#061b1c;
     padding:20px;
 }
 
@@ -30,7 +30,7 @@ body{
 
 .left{
     flex:1;
-    background:linear-gradient(135deg,#000000,#2d5d5b);
+    background:linear-gradient(135deg,#63b0cc,#2d5d5b);
     color:#ffffff;
     display:flex;
     flex-direction:column;
@@ -108,7 +108,7 @@ button{
     padding:15px;
     border:none;
     border-radius:5px;
-    background:#000000;
+    background:#30837d;
     color:#fff;
     font-size:16px;
     cursor:pointer;
