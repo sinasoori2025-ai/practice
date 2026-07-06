@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #5e8390;
+    background: #19232b;
     padding: 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 
 /* سمت چپ */
 .left {
-    background: #182a45;
+    background: #427274;
     color: #fff;
 
     display: flex;
@@ -54,17 +54,9 @@ body {
     max-width: 300px;
 }
 
-/* عکس بزرگ */
-.left-img {
-    width: 220px;
-    height: 220px;
-    object-fit: contain;
-    margin-top: 25px;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,.2));
-}
-
+/* سمت راست */
 .right {
-    background:rgb(169, 196, 215);
+    background: #fff;
 }
 
 .right h2 {
@@ -106,18 +98,23 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* موبایل */
+/* ⭐ مهم: ریسپانسیو واقعی */
 @media (max-width: 768px) {
+
     .card {
-        flex-direction: column;
+        flex-direction: column; /* زیر هم */
     }
 
     .left, .right {
+        width: 100%;
         padding: 25px;
     }
 
-    .left-img {
-        width: 160px;
-        height: 160px;
+    .left p {
+        max-width: 100%;
     }
 }
+ .left-img {
+        width: 300px;
+        height: 200px;
+    }
