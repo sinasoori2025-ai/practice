@@ -1,120 +1,157 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: tahoma;
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Tahoma,sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #19232b;
-    padding: 20px;
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1b2a2f;
+    padding:20px;
 }
 
-/* کارت اصلی */
-.card {
-    width: 1000px;
-    max-width: 100%;
-    background: #fff;
-    display: flex;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 12px 30px rgba(0,0,0,.1);
+/* Card */
+
+.card{
+    width:100%;
+    max-width:1000px;
+    display:flex;
+    background:#ffffff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
 }
 
-/* ستون‌ها */
-.left, .right {
-    flex: 1;
-    padding: 40px;
+/* Left */
+
+.left{
+    flex:1;
+    background:linear-gradient(135deg,#3b7d79,#2d5d5b);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
 }
 
-/* سمت چپ */
-.left {
-    background: #427274;
-    color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.left h2{
+    font-size:32px;
+    margin-bottom:15px;
 }
 
-.left h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+.left p{
+    max-width:320px;
+    line-height:1.8;
+    opacity:.9;
 }
 
-.left p {
-    line-height: 2;
-    opacity: 0.9;
-    max-width: 300px;
+.left-img{
+    width:100%;
+    max-width:320px;
+    margin-top:35px;
+    border-radius:15px;
+    object-fit:cover;
 }
 
-/* سمت راست */
-.right {
-    background: #fff;
+/* Right */
+
+.right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    background:#ffffff;
 }
 
-.right h2 {
-    margin-bottom: 20px;
-    color: #222;
+form{
+    width:100%;
+    max-width:360px;
 }
 
-/* input */
-input {
-    width: 100%;
-    padding: 14px;
-    margin: 12px 0;
-    border: 1px solid #dbeafe;
-    border-radius: 10px;
-    background: #f8fafc;
+.right h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#2d5d5b;
+    font-size:30px;
 }
 
-input:focus {
-    outline: none;
-    border-color: #2563eb;
-    background: #fff;
+/* Inputs */
+
+input{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:10px;
+    background:#f3f7f7;
+    font-size:15px;
+    transition:.3s;
 }
 
-/* button */
-button {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    background: #2563eb;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s;
+input:focus{
+    outline:none;
+    background:#fff;
+    box-shadow:0 0 0 3px rgba(59,125,121,.2);
 }
 
-button:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
+/* Button */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#3b7d79;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-/* ⭐ مهم: ریسپانسیو واقعی */
-@media (max-width: 768px) {
+button:hover{
+    background:#2d5d5b;
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
 
-    .card {
-        flex-direction: column; /* زیر هم */
+/* Responsive */
+
+@media (max-width:768px){
+
+    .card{
+        flex-direction:column;
     }
 
-    .left, .right {
-        width: 100%;
-        padding: 25px;
+    .left{
+        padding:30px 20px;
     }
 
-    .left p {
-        max-width: 100%;
+    .left h2{
+        font-size:28px;
+    }
+
+    .left p{
+        font-size:15px;
+        max-width:100%;
+    }
+
+    .left-img{
+        max-width:220px;
+        margin-top:20px;
+    }
+
+    .right{
+        padding:30px 20px;
+    }
+
+    .right h2{
+        font-size:26px;
     }
 }
- .left-img {
-        width: 300px;
-        height: 200px;
-    }
