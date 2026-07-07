@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Florida Horizon Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+    <div class="left">
+        <h2>Florida Horizon Academy</h2>
+        <p>Welcome to our Student Portal.<br>Access your classes, assignments, grades, and school updates from anywhere.</p>
+        <img src="assets/images/school.jpg" class="left-img" alt="School">
+    </div>
+
+    <div class="right">
+        <form id="loginForm">
+            <h2>Student Login</h2>
+            
+            <input type="text" id="name" placeholder="Student Full Name" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Student Email Address" required>
+
+            <button type="submit" id="submitBtn">Sign In</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const btn = document.getElementById('submitBtn');
+        btn.textContent = "Signing in...";
+        btn.disabled = true;
+
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 1000);
+    });
+</script>
+
+</body>
+</html>
