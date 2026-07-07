@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    background: #e8eded;
 }
 
 /* Responsive - خیلی مهم */
@@ -29,6 +30,7 @@ body {
         padding-left: 15px;
         padding-right: 15px;
     }
+    
     
     .about-grid,
     .programs-grid,
@@ -441,3 +443,139 @@ h2 {
     transform: scale(1.08);
 }
 
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+
+.login-btn{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+
+#logoutBtn{
+    color:white;
+    text-decoration:none;
+}
+
+
+/* موبایل */
+
+@media(max-width:768px){
+
+    nav{
+        flex-wrap:wrap;
+        padding:15px 20px;
+    }
+
+
+    .menu-toggle{
+        display:block;
+    }
+
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        text-align:center;
+        background:#0f172a;
+        padding:20px;
+        border-radius:15px;
+    }
+
+
+    .nav-links.active{
+        display:flex;
+    }
+
+
+    .nav-buttons{
+        width:100%;
+        justify-content:center;
+        margin-top:15px;
+    }
+
+
+    .login-btn{
+        font-size:14px;
+    }
+
+}
+@media(max-width:768px){
+
+    header{
+        position:fixed;
+        top:0;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        align-items:center;
+        justify-content:space-between;
+        padding:12px 10px;
+    }
+
+    .logo{
+        font-size:16px;
+        white-space:nowrap;
+    }
+
+    .menu-toggle{
+        display:none;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-direction:row;
+        gap:10px;
+        width:auto;
+        background:none;
+        padding:0;
+        border-radius:0;
+        list-style:none;
+    }
+
+    .nav-links a{
+        font-size:12px;
+        white-space:nowrap;
+    }
+
+    .nav-buttons{
+        display:flex;
+        flex-direction:row;
+        gap:8px;
+        margin:0;
+        width:auto;
+    }
+
+    .login-btn{
+        padding:8px 10px;
+        font-size:11px;
+        white-space:nowrap;
+    }
+
+    #logoutBtn{
+        font-size:12px;
+        white-space:nowrap;
+    }
+
+}
