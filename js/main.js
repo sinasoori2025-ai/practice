@@ -39,3 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if(menuToggle){
+    menuToggle.onclick = function(){
+        navLinks.classList.toggle("active");
+        menuToggle.innerHTML = 
+        navLinks.classList.contains("active") ? "✕" : "☰";
+    };
+}
