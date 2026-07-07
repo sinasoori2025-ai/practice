@@ -474,50 +474,6 @@ h2 {
     text-decoration:none;
 }
 
-
-/* موبایل */
-
-@media(max-width:768px){
-
-    nav{
-        flex-wrap:wrap;
-        padding:15px 20px;
-    }
-
-
-    .menu-toggle{
-        display:block;
-    }
-
-
-    .nav-links{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        text-align:center;
-        background:#0f172a;
-        padding:20px;
-        border-radius:15px;
-    }
-
-
-    .nav-links.active{
-        display:flex;
-    }
-
-
-    .nav-buttons{
-        width:100%;
-        justify-content:center;
-        margin-top:15px;
-    }
-
-
-    .login-btn{
-        font-size:14px;
-    }
-
-}
 @media(max-width:768px){
 
     header{
@@ -535,7 +491,7 @@ h2 {
     }
 
     .logo{
-        font-size:16px;
+        font-size:12px;
         white-space:nowrap;
     }
 
@@ -555,7 +511,7 @@ h2 {
     }
 
     .nav-links a{
-        font-size:12px;
+        font-size:9px;
         white-space:nowrap;
     }
 
