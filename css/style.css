@@ -20,6 +20,9 @@ body {
     border-radius:25px;
     overflow:hidden;
     box-shadow:0 30px 70px rgba(0,0,0,.35);
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .left{

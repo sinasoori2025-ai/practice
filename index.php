@@ -1,0 +1,103 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Horizon Academy | Innovative Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <span>Florida Horizon</span> Academy
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#campus">Campus</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+           <div style="display:flex;align-items:center;gap:15px;">
+
+<span style="color:white;font-weight:600;">
+Welcome, <?php echo htmlspecialchars($studentName); ?>
+</span>
+
+<a href="logout.php" class="login-btn">
+Logout
+</a>
+
+</div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Florida Horizon Academy</h1>
+            <p>Where innovation meets excellence. A technology-forward school empowering the next generation of leaders in sunny Florida.</p>
+            <div class="cta-buttons">
+                <a href="#academics" class="btn btn-primary">Explore Programs</a>
+                <a href="#admissions" class="btn btn-outline">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our School</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Shaping Tomorrow's Innovators</h3>
+                    <p>Florida Horizon Academy is a premier K-12 institution located in the heart of Florida. We combine rigorous academics with cutting-edge technology, project-based learning, and a strong emphasis on creativity and critical thinking.</p>
+                    <p>Our state-of-the-art campus features modern laboratories, AI-powered classrooms, robotics centers, and beautiful outdoor learning spaces overlooking Florida's natural beauty.</p>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <div class="stat-number">850+</div>
+                            <p>Students</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">98%</div>
+                            <p>College Acceptance</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">45</div>
+                            <p>Expert Faculty</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">25</div>
+                            <p>Clubs &amp; Teams</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/id/1016/800/600" alt="Campus" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics -->
+    <section id="academics" class="academics">
+        <div class="container">
+            <h2>Our Academic Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <img src="https://picsum.photos/id/201/600/400" alt="STEM">
+                    <div class="program-content">
+                        <h3>STEM Excellence</h3>
+                        <p>Advanced science, technology, engineering, and mathematics with hands-on robotics, coding, and research opportunities.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="https://picsum.photos/id/237/600/400" alt="Arts">
+                    <div class="program-content">
+                        <h3>Creative Arts &amp; Design</h3>
+                        <p>Digital media, graphic design, music production, and performing arts i
