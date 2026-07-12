@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Florida Horizon Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background: linear-gradient(135deg, #0f172a, #1e3a8a); height: 100vh; display:flex; align-items:center; justify-content:center; }
+        .card { max-width: 600px; width: 90%; background:white; padding:30px; border-radius:20px; box-shadow:0 20px 60px rgba(0,0,0,0.3); }
+        input { width:100%; padding:14px; margin:10px 0; border:1px solid #ddd; border-radius:10px; }
+        button { width:100%; padding:14px; background:#2563eb; color:white; border:none; border-radius:10px; font-size:1.1rem; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <form method="POST" action="register.php">
+        <h2 style="text-align:center;">Student Registration</h2>
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="password" name="password" placeholder="Create Password" required>
+        <button type="submit">Register</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">Already have an account? <a href="login.html">Login</a></p>
+</div>
+</body>
+</html>
